@@ -1,102 +1,248 @@
 <!DOCTYPE html>
-<html lang="en-UK">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="">
-        <meta name="author" content="Christopher Aykroyd">  
-          
-        <title>Portfolio</title>
-        
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christopher Aykroyd | Game Developer</title>
 
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-            <div class="container">
-                <a class="navbar-brand" href="#">Homepage</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>                    
-                </div>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Christopher Aykroyd</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero section -->
+  <header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+      <p class="hero-tag mb-2">Engineer • Astrophysicist • Aspiring Indie Game Developer</p>
+      <h1 class="display-3 fw-bold">Christopher Aykroyd</h1>
+      <p class="lead hero-text mx-auto mt-3">
+        After completing a PhD in astrophysics, I’m now focusing on game development and interactive systems as an outlet to creative problem-solving.
+      </p>
+
+      <div class="mt-4 d-flex gap-3 justify-content-center flex-wrap">
+        <a href="#projects" class="btn btn-primary btn-lg">See My Games</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About section -->
+  <section id="about" class="py-5 section-dark">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <div class="col-12 col-lg-7">
+        <p class="section-label mb-2">About Me</p>
+        <h2 class="mb-4">From physics to games</h2>
+
+        <p class="about-text">
+          I’m an engineer and recent PhD graduate in astrophysics with a long-standing love for
+          games, maths, and creative problem-solving. I enjoy building systems that are both
+          technically challenging and fun to interact with.
+        </p>
+
+        <p class="about-text">
+          My background has trained me to think deeply about algorithms, simulation, and complex
+          behaviour, and I’m now bringing that mindset into game development. I’m especially drawn
+          to indie projects where programming, experimentation, and creative design all come together.
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <div class="about-panel">
+          <h3 class="h5 mb-3">Quick snapshot</h3>
+          <ul class="about-list">
+            <li>PhD in astrophysics</li>
+            <li>Interested in gameplay, systems, graphics, and simulation</li>
+            <li>Built game jam and personal projects</li>
+            <li>Passionate about puzzles and stories</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Projects section -->
+  <section id="projects" class="py-5 section-darker">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap mb-4">
+      <div>
+        <p class="section-label mb-1">Featured</p>
+        <h2 class="mb-0">Projects</h2>
+      </div>
+      <p class="text-light-subtle mb-0">Games and systems I’ve built</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Balloons -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-thumb">
+            <img src="res/img/balloons.png" alt="Screenshot from Balloons of Paradise" class="project-image">
+          </div>
+
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4 card-title project-title">Balloons of Paradise</h3>
+            <p class="card-text">
+              Navigate the wind in a balloon. Explore the sky and the land as a penguin. Ongoing project at Space Lion Studios.
+            </p>
+
+            <div class="mb-3">
+              <span class="badge tech-badge">Unity</span>
+              <span class="badge tech-badge">Fluid dynamics</span>
             </div>
-        </nav>
 
-        <!-- https://www.technologyreview.com/2019/12/14/131574/tidal-forces-carry-the-mathematical-signature-of-gravitational-waves/ -->
-        <section class="bgimage" id="home">
-            <div class="container-fluid">
-                <div class="hero-text">
-                    <h2 class="hero_title">Hi, I'm Chris</h2>
-                    <p class="hero_desc">I am a doctoral student researching gravitational waves</p>
-                </div>
+            <div class="mt-auto d-flex gap-2 flex-wrap">
+              <!-- <a href="#" class="btn btn-primary">Project Link</a> -->
+              <!-- <a href="#" class="btn btn-outline-light">GitHub</a> -->
             </div>
-        </section>
-        
-        <section id="about">
-            <div class="container mt-4 pt-4">
-                <h1 class="text-center">About Me</h1>
-                <div class="row mt-4">
-                    <div class="col-lg-4">
-                        <img src="res/about.jpg" class= "avatar" alt="">
-                    </div>
-    
-                    <div class="col-lg-8">
-                        <h4>Christopher Aykroyd</h4>
-                        <p> PhD Student at SYRTE, Observatoire de Paris. My main research interests include General Relativity, blablabla. 
-                        </p>
-                        <div class="row mt-3">
-                            <div class="col-md-6">
-                                <ul>
-                                    <li>Name: Me</li>
-                                    <li>Age: 27</li>
-                                    <li>Email:</li>    
-                                    <li>Linked-in:</li>    
-                                    <li>ORCID:</li>    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-        </section>
-               
-        <footer id="footer">
-            <div class="container-fluid">
-                <!-- social media icons -->
-                <div class="social-icons mt-4">
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.twitch.tv/" target="_blank"><i class="fab fa-twitch"></i></a>
-                </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Timeflick -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-thumb">
+            <img src="res/img/timeflick.jpeg" alt="Screenshot from Timeflick" class="project-image">
+          </div>
+
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4 card-title project-title">Timeflick</h3>
+            <p class="card-text">
+              A mobile game where you control a trio of hockey disk characters with a unique powers. Defeat the boss while taking as little damage as possible. 
+              <!-- Made at Wildlife's 2020 Game Jam. -->
+            </p>
+
+            <div class="mb-3">
+              <span class="badge tech-badge">Unity</span>
+              <span class="badge tech-badge">Mobile</span>
+              <span class="badge tech-badge">Game jam</span>
             </div>
-        </footer>
 
-        <script src="script/script.js"></script>
-        
-    </body>
+            <div class="mt-auto d-flex gap-2 flex-wrap">
+              <a href="res/videos/timeflick.mp4" class="btn btn-outline-info" target="_blank" rel="noopener noreferrer">Video Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Protect My Dungeon -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card project-card h-100">
+          <div class="project-thumb">
+            <img src="res/img/protect-my-dungeon.png" alt="Screenshot from Protect My Dungeon" class="project-image">
+          </div>
+
+          <div class="card-body d-flex flex-column">
+            <h3 class="h4 card-title project-title">Protect My Dungeon</h3>
+            <p class="card-text">
+              A mobile tower defense game where you play as a lich. Protect your dungeon from greedy
+              adventurers who want to steal your treasure!
+            </p>
+
+            <div class="mb-3">
+              <span class="badge tech-badge">Unity</span>
+              <span class="badge tech-badge">Mobile</span>
+              <span class="badge tech-badge">Game Jam</span>
+            </div>
+
+            <div class="mt-auto d-flex gap-2 flex-wrap">
+              <a href="res/videos/protect-my-dungeon.mp4" class="btn btn-outline-info" target="_blank" rel="noopener noreferrer">Video Link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer py-4">
+  <div class="container">
+
+    <div class="footer-top d-flex justify-content-center gap-3 mb-3">
+        <a href="mailto:christopheraykroyd@gmail.com"
+           class="footer-icon"
+           aria-label="Email"
+           title="Email">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+
+        <a href="https://github.com/caykroyd"
+           class="footer-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub"
+           title="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/christopher-aykroyd"
+           class="footer-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn"
+           title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="assets/files/cv.pdf"
+           class="footer-icon"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Download CV"
+           title="Download CV">
+          <i class="bi bi-file-earmark-text-fill"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy text-center mb-0">© 2026 Christopher Aykroyd. All rights reserved.</p>
+
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
 </html>
