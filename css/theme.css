@@ -1,0 +1,28 @@
+:root {
+  --color-bg-main: #0b1020;
+  --color-bg-section: #11162a;
+  --color-bg-footer: #080c18;
+  --color-surface-card: #151b34;
+  --color-surface-thumb: #0f1530;
+
+  --color-text-main: #e9eefc;
+  --color-text-heading: #ffffff;
+  --color-text-muted: #d3dcf8;
+  --color-text-subtle: #9aa7d1;
+
+  --color-accent: #6c63ff;
+  --color-accent-hover: #5b53e6;
+  --color-accent-soft: #9fb3ff;
+
+  --color-border-soft: rgba(255, 255, 255, 0.08);
+  --color-border-muted: rgba(255, 255, 255, 0.1);
+
+  --color-badge-bg: rgba(159, 179, 255, 0.15);
+  --color-badge-border: rgba(159, 179, 255, 0.2);
+
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow-panel: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  --font-body: "Inter", sans-serif;
+  --font-display: Arial, sans-serif;
+}
