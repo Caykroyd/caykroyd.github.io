@@ -107,7 +107,7 @@ function renderProjectModal(project) {
   const modalTitle = projectModalElement.querySelector(".modal-title");
   const modalSubtitle = projectModalElement.querySelector(".project-modal-summary");
   const modalTagContainer = projectModalElement.querySelector(".project-modal-tags");
-  const modalContributionList = projectModalElement.querySelector(".project-modal-highlights");
+  // const modalContributionList = projectModalElement.querySelector(".project-modal-highlights");
   const modalFooterLinks = projectModalElement.querySelector(".project-modal-links");
 
   modalTitle.textContent = project.title;
@@ -117,9 +117,9 @@ function renderProjectModal(project) {
     .map(tag => `<span class="badge tech-badge">${tag}</span>`)
     .join("");
 
-  modalContributionList.innerHTML = project.highlights
-    .map(item => `<li>${item}</li>`)
-    .join("");
+  // modalContributionList.innerHTML = project.highlights
+  //   .map(item => `<li>${item}</li>`)
+  //   .join("");
 
   modalFooterLinks.innerHTML = project.links
     .map(createLinkHtml)

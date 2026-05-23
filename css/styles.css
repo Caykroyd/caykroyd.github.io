@@ -133,13 +133,13 @@ footer {
   text-wrap: balance;
 }
 
-.project-description,
+/* .project-description,
 .project-card .card-text,
 .about-text,
 .project-modal-summary,
 .project-modal-highlights li {
   font-family: var(--font-body);
-}
+} */
 
 .project-card .card-text {
   color: var(--color-text-muted);
@@ -243,16 +243,16 @@ footer {
   line-height: 1.7;
 }
 
-.project-modal-highlights {
+/* .project-modal-highlights {
   padding-left: 1.2rem;
   margin-bottom: 0;
-}
+} */
 
-.project-modal-highlights li {
+/* .project-modal-highlights li {
   color: var(--color-text-main);
   line-height: 1.7;
   margin-bottom: 0.8rem;
-}
+} */
 
 .project-modal-footer {
   display: flex;

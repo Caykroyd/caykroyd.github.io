@@ -1,17 +1,17 @@
 export const projectCategories = [
   {
     id: "long-term-games",
-    title: "Games",
+    title: "Game Collaborations",
     subtitle: "Larger projects I’ve helped develop over a longer time span."
   },
   {
     id: "game-jams",
-    title: "Hackathons",
+    title: "Hackathons & Game Jams",
     subtitle: "Short, focused projects built under tight time constraints."
   },
   {
     id: "misc",
-    title: "Technical Projects",
+    title: "Sample Technical Projects",
     subtitle: "Miscellaneous projects in graphics programming, simulation, astrophysics and machine learning."
   }
 ];
@@ -22,7 +22,7 @@ export const projects = [
     title: "Balloons of Paradise",
     category: "long-term-games",
     summary:
-      "Navigate the wind in a balloon. Explore the sky and the land as a penguin. Ongoing project at Space Lion Studios.",
+      "Navigate the wind in a balloon as the penguin Perdu, collecting hats in the isle of Emeraldia. Explore the sky and the land as a penguin. Ongoing project at Space Lion Studios.",
     image: "res/img/balloons.png",
     imageAlt: "Screenshot from Balloons of Paradise",
     tags: ["Unity", "C#"],
@@ -35,9 +35,8 @@ export const projects = [
       }
     ],   
     longDescription:
-        "",
+        "Balloons of Paradise is a prototype hot-air balloon game by Space Lion Studios, supported through the IndieDev Prototype Fund. The game features a relaxed, atmospheric style of play, where the balloon is carried along wind currents. My work on the prototype focused mainly on implementing wind fluid dynamics and balloon navigation systems.",
     highlights: [
-        "Implemented wind fluid dynamics and balloon navigation."
     ],
   },
   {
@@ -68,7 +67,6 @@ export const projects = [
     longDescription:
         "Axyz is a 3D puzzle-platformer and the first game developed by Space Lion Studios, released on Steam in March 2025. The game is built around perspective shifts, gravity switching, and spatial reasoning, challenging players to navigate more than 100 levels across 8 worlds. On this project, I contributed to gameplay programming, particularly graph-based player navigation across the block surfaces.",
     highlights: [
-        "",
     ],
   },
   {
@@ -89,9 +87,8 @@ export const projects = [
       }
     ], 
     longDescription:
-        "Developed during the game jam at Wildlife Studios.",
+        "Game jam at Wildlife Studios. I was co-developer in gameplay, UI, and metagame features.",
     highlights: [
-        "Co-developer in gameplay, UI, and metagame features.",
     ],
   },
   {
@@ -112,9 +109,8 @@ export const projects = [
       }
     ],  
     longDescription:
-        "",
+        "Game jam at Wildlife Studios. I was co-developer in design, gameplay, main menus and minigame systems.",
     highlights: [
-        "Co-developer in design, gameplay, main menus and minigame systems."
     ],
   },
   
